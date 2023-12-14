@@ -70,6 +70,28 @@ module.exports = {
   appTsBuildInfoFile: resolveApp('node_modules/.cache/tsconfig.tsbuildinfo'),
   swSrc: resolveModule(resolveApp, 'src/service-worker'),
   publicUrlOrPath,
+  // user defined
+  tauri: resolveApp('src-tauri'),
+  src: resolveApp('src'),
+  api: resolveApp('src/api'),
+  comp: resolveApp('src/component'),
+  con: resolveApp('src/container'),
+  core: resolveApp('src/core'),
+  db: resolveApp('src/db'),
+  docs: resolveApp('src/docs'),
+  i18n: resolveApp('src/i18n'),
+  lib: resolveApp('src/lib'),
+  page: resolveApp('src/page'),
+  scss: resolveApp('src/scss'),
+  service: resolveApp('src/service'),
+  static: resolveApp('src/static'),
+  image: resolveApp('src/static/image'),
+  icon: resolveApp('src/static/icon'),
+  store: resolveApp('src/store'),
+  styled: resolveApp('src/styled'),
+  theme: resolveApp('src/theme'),
+  tool: resolveApp('src/tool'),
+  util: resolveApp('src/util'),
 };
 
 module.exports.moduleFileExtensions = moduleFileExtensions;

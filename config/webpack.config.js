@@ -311,6 +311,28 @@ module.exports = webpackEnv => {
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
         'react-native': 'react-native-web',
+        '@': paths.src,
+        '@tauri': paths.tauri,
+        '@src': paths.src,
+        '@api': paths.api,
+        '@comp': paths.comp,
+        '@con': paths.con,
+        '@core': paths.core,
+        '@db': paths.db,
+        '@docs': paths.docs,
+        '@i18n': paths.i18n,
+        '@lib': paths.lib,
+        '@page': paths.page,
+        '@scss': paths.scss,
+        '@service': paths.service,
+        '@static': paths.static,
+        '@image': paths.image,
+        '@icon': paths.icon,
+        '@store': paths.store,
+        '@styled': paths.styled,
+        '@theme': paths.theme,
+        '@tool': paths.tool,
+        '@util': paths.util,
         // Allows for better profiling with ReactDevTools
         ...(isEnvProductionProfile && {
           'react-dom$': 'react-dom/profiling',
@@ -562,7 +584,6 @@ module.exports = webpackEnv => {
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         {
-
           inject: true,
           template: paths.appHtml,
           ...(isEnvProduction ?

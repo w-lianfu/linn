@@ -1,15 +1,15 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppRoot from '@con/app-root';
 
 const root = createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
   <StrictMode>
-    <App />
+    <AppRoot />
   </StrictMode>,
 );
 
