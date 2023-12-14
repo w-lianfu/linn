@@ -1,14 +1,17 @@
 import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
 
 import '@scss/index.scss';
+import Theme from '@theme/index';
+import Dashboard from '@page/dashboard/index';
 
 interface IProps {}
 interface IState {}
 
 const AppRoot = (props: IProps, state: IState) => (
-  <section>
-    <h1>~~~ Welcome Welcome Welcome ~~~</h1>
-  </section>
+  <ThemeProvider theme={Theme}>
+    <Dashboard />
+  </ThemeProvider>
 );
 
 export default AppRoot;
