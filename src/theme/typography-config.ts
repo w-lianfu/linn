@@ -3,7 +3,8 @@ import Color from '@tool/color';
 const TypographyConfig = {
   htmlForSize: 10,
   fontFamily: 'Ubuntu, "Open Sans", "PingFang SC", system-ui, sans-serif',
-  fontSize: '1.4rem',
+  // fontSize: '1.4rem',
+  fontSize: 14,
   fontWeightLight: 400,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
@@ -71,13 +72,13 @@ const TypographyConfig = {
   },
   h2: {
     fontWeight: 500,
-    fontSize: '3.2rem',
+    fontSize: '3.6rem',
     lineHeight: 1.5,
     letterSpacing: '0.01rem',
   },
   h1: {
     fontWeight: 500,
-    fontSize: '3.6rem',
+    fontSize: '4rem',
     lineHeight: 1.5,
     letterSpacing: '0.01rem',
   },

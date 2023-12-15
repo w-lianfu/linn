@@ -8,10 +8,11 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
-  height: '0.6rem',
-  backgroundColor: Color.secondary(1),
+  width: '0.6rem',
+  height: '100%',
+  backgroundColor: Color.purple(1),
 });
 
-const AppStatus = (props: IProps, state: IState) => <DBox />;
+const AppRight = (props: IProps, state: IState) => <DBox />;
 
-export default AppStatus;
+export default AppRight;

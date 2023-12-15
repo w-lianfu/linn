@@ -1,12 +1,22 @@
 import React from 'react';
-import { Button } from '@mui/material';
+import { Paper, Button, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
+
+import Color from '@tool/color';
 
 interface IProps {}
 interface IState {}
 
+const DPaper = styled(Paper)({
+  height: '100%',
+  display: 'flex',
+  flex: 1,
+  overflowY: 'auto',
+});
+
 const Dashboard = (props: IProps, state: IState) => {
   return (
-    <section>
+    <DPaper>
       <Button variant="contained" color="primary">Primary Primary Primary</Button>
       <Button variant="contained" color="secondary">Secondary Secondary Secondary</Button>
       <Button variant="contained" color="success">Success Success Success</Button>
@@ -61,7 +71,13 @@ const Dashboard = (props: IProps, state: IState) => {
       <Button variant="dashed" color="dim">Dim Dim Dim Dim Dim</Button>
       <Button variant="dashed" color="white">White White White</Button>
       <Button variant="dashed">Default Default Default</Button>
-    </section>
+      <Typography variant="h1">万物皆迷于有形，则无形绝尘于万物</Typography>
+      <Typography variant="h2">追求技术之巅，探索宇宙之秘</Typography>
+      <Typography variant="h3">以无形化有形归来，以有形化无形归去</Typography>
+      <Typography variant="h4">百味难调千人口，杯酒醉倒万人心</Typography>
+      <Typography variant="h5">做一棵树，不因风雨摇，不为雷电动</Typography>
+      <Typography variant="h6">做一棵树，只因风雨摇，只为雷电动</Typography>
+    </DPaper>
   );
 };
 
