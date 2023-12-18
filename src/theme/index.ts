@@ -37,8 +37,10 @@ const Theme = createTheme({
           width: '4rem',
           height: '4rem',
           margin: '0.6rem',
-          fontSize: '1.5rem',
+          fontSize: '1.6rem',
           backgroundColor: Color.grey(),
+
+          '&:hover': { backgroundColor: Color.magenta(1) },
         },
       },
     },

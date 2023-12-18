@@ -3,6 +3,7 @@ import { Paper, Button, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import AppDial from '@con/app-dial';
 
 interface IProps {}
 interface IState {}
@@ -17,6 +18,7 @@ const DPaper = styled(Paper)({
 const Dashboard = (props: IProps, state: IState) => {
   return (
     <DPaper>
+      <AppDial />
       <Button variant="contained" color="primary">Primary Primary Primary</Button>
       <Button variant="contained" color="secondary">Secondary Secondary Secondary</Button>
       <Button variant="contained" color="success">Success Success Success</Button>

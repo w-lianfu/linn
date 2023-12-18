@@ -7,28 +7,56 @@ const ButtonConfig = {
         variant: 'outlined',
         color: 'black',
       },
-      style: { color: Color.white() },
+      style: {
+        color: Color.white(1),
+        border: `0.1rem solid ${Color.white(1)}`,
+        '&:hover': {
+          backgroundColor: Color.white(0.1),
+          border: `0.1rem solid ${Color.white(1)}`,
+        },
+      },
     },
     {
       props: {
         variant: 'outlined',
         color: 'dark',
       },
-      style: { color: Color.white() },
+      style: {
+        color: Color.white(1),
+        border: `0.1rem solid ${Color.white(1)}`,
+        '&:hover': {
+          backgroundColor: Color.white(0.1),
+          border: `0.1rem solid ${Color.white(1)}`,
+        },
+      },
     },
     {
       props: {
         variant: 'outlined',
         color: 'grey',
       },
-      style: { color: Color.white() },
+      style: {
+        color: Color.white(1),
+        border: `0.1rem solid ${Color.white(1)}`,
+        '&:hover': {
+          backgroundColor: Color.white(0.1),
+          border: `0.1rem solid ${Color.white(1)}`,
+        },
+      },
     },
     {
       props: {
         variant: 'outlined',
         color: 'dim',
       },
-      style: { color: Color.white() },
+      style: {
+        color: Color.white(1),
+        border: `0.1rem solid ${Color.white(1)}`,
+        '&:hover': {
+          backgroundColor: Color.white(0.1),
+          border: `0.1rem solid ${Color.white(1)}`,
+        },
+      },
     },
     {
       props: { variant: 'dashed' },
@@ -166,7 +194,8 @@ const ButtonConfig = {
       },
       style: {
         color: Color.white(),
-        border: `0.1rem dashed ${Color.black()}`,
+        // border: `0.1rem dashed ${Color.black()}`,
+        border: `0.1rem dashed ${Color.white()}`,
         '&:hover': { backgroundColor: Color.black(0.08) },
       },
     },
@@ -177,7 +206,8 @@ const ButtonConfig = {
       },
       style: {
         color: Color.white(),
-        border: `0.1rem dashed ${Color.dark()}`,
+        // border: `0.1rem dashed ${Color.dark()}`,
+        border: `0.1rem dashed ${Color.white()}`,
         '&:hover': { backgroundColor: Color.dark(0.08) },
       },
     },
@@ -188,7 +218,8 @@ const ButtonConfig = {
       },
       style: {
         color: Color.white(),
-        border: `0.1rem dashed ${Color.grey()}`,
+        // border: `0.1rem dashed ${Color.grey()}`,
+        border: `0.1rem dashed ${Color.white()}`,
         '&:hover': { backgroundColor: Color.grey(0.08) },
       },
     },
@@ -199,7 +230,8 @@ const ButtonConfig = {
       },
       style: {
         color: Color.white(),
-        border: `0.1rem dashed ${Color.dim()}`,
+        // border: `0.1rem dashed ${Color.dim()}`,
+        border: `0.1rem dashed ${Color.white()}`,
         '&:hover': { backgroundColor: Color.dim(0.08) },
       },
     },
