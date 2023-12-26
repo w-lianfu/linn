@@ -14,14 +14,14 @@ interface IState {}
 
 const DPaper = styled(Paper)({
   display: 'grid',
-  gridTemplateRows: '0.6rem 1fr 0.6rem',
+  gridTemplateRows: '0.4rem 1fr 0.4rem',
   overflowY: 'hidden',
 });
 
 const EPaper = styled(Paper)({
   height: '100%',
   display: 'grid',
-  gridTemplateColumns: '0.6rem 1fr 0.6rem',
+  gridTemplateColumns: '0.4rem 1fr 0.4rem',
   overflowY: 'hidden',
 });
 

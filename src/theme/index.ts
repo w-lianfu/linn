@@ -17,17 +17,21 @@ const Theme = createTheme({
       styleOverrides: {
         root: {
           position: 'fixed',
-          bottom: '2.5rem',
+          bottom: '2rem',
           right: '1.5rem',
+
+          '.MuiSpeedDial-actions': {
+            paddingBottom: '4.4rem',
+          },
         },
         fab: {
           width: '5rem',
           height: '5rem',
           lineHeight: 1,
-          color: Color.tomato(),
-          backgroundColor: Color.grey(),
+          color: Color.tomato(1),
+          backgroundColor: Color.grey(1),
 
-          '&:hover': { backgroundColor: Color.dim() },
+          '&:hover': { backgroundColor: Color.dim(1) },
         },
       },
     },
@@ -37,10 +41,10 @@ const Theme = createTheme({
           width: '4rem',
           height: '4rem',
           margin: '0.6rem',
-          fontSize: '1.6rem',
-          backgroundColor: Color.grey(),
+          fontSize: '1.7rem',
+          backgroundColor: Color.grey(1),
 
-          '&:hover': { backgroundColor: Color.magenta(1) },
+          '&:hover': { backgroundColor: Color.secondary(1) },
         },
       },
     },

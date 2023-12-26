@@ -8,7 +8,7 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
-  width: '0.6rem',
+  width: '0.4rem',
   height: '100%',
   backgroundColor: Color.tomato(1),
 });
