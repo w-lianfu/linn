@@ -3,7 +3,8 @@ import {
   Box, SpeedDial, SpeedDialIcon, SpeedDialAction,
 } from '@mui/material';
 import {
-  MdLock, MdLockOpen, MdHome,
+  MdLock, MdLockOpen, MdHome, MdDashboard,
+  MdOutlineDonutLarge, MdImage, MdVideocam,
 } from 'react-icons/md';
 
 interface IProps {}
@@ -11,8 +12,11 @@ interface IState {}
 
 const actions = [
   { icon: <MdLock />, name: 'Lock' },
-  { icon: <MdLockOpen />, name: 'Open' },
+  { icon: <MdOutlineDonutLarge />, name: 'Loading' },
+  { icon: <MdDashboard />, name: 'Dashboard' },
   { icon: <MdHome />, name: 'Home' },
+  { icon: <MdImage />, name: 'Image' },
+  { icon: <MdVideocam />, name: 'Video' },
 ];
 
 const AppDial = (props: IProps, state: IState) => {
@@ -24,7 +28,7 @@ const AppDial = (props: IProps, state: IState) => {
           <SpeedDialAction
             key={action.name}
             icon={action.icon}
-            tooltipTitle={action.name} />
+            tooltipTitle={''} />
         ))}
       </SpeedDial>
     </Box>

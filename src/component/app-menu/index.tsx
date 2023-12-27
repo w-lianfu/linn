@@ -8,9 +8,11 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
-  width: '0.4rem',
+  width: '100%',
   height: '100%',
-  backgroundColor: Color.tomato(1),
+  borderLeft: `0.4rem solid ${Color.warning(1)}`,
+  borderRight: `0.2rem solid ${Color.warning(1)}`,
+  backgroundColor: Color.grey(1),
 });
 
 const AppMenu = (props: IProps, state: IState) => <DBox />;

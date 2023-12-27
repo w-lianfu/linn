@@ -21,7 +21,7 @@ const DPaper = styled(Paper)({
 const EPaper = styled(Paper)({
   height: '100%',
   display: 'grid',
-  gridTemplateColumns: '0.4rem 1fr 0.4rem',
+  gridTemplateColumns: '5rem 1fr 0.4rem',
   overflowY: 'hidden',
 });
 

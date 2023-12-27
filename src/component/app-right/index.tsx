@@ -8,9 +8,9 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
-  width: '0.4rem',
+  width: '100%',
   height: '100%',
-  backgroundColor: Color.purple(1),
+  backgroundColor: Color.warning(1),
 });
 
 const AppRight = (props: IProps, state: IState) => <DBox />;
