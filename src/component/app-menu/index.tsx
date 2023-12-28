@@ -3,7 +3,8 @@ import { Box, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import {
   MdDashboard, MdHome, MdVideocam, MdImage,
-  MdEmojiEvents, MdOutlineSecurity, MdAcUnit, MdCamera,
+  MdEmojiEvents, MdOutlineSecurity,
+  MdLocalPolice, MdAcUnit, MdCamera,
 } from 'react-icons/md';
 
 import Color from '@tool/color';
@@ -65,7 +66,15 @@ const AppMenu = (props: IProps, state: IState) => (
     </EBox>
 
     <DBox>
-      <DButton>Hello</DButton>
+      <DButton color="warning">
+        <MdLocalPolice style={{ fontSize: '2rem' }} />
+      </DButton>
+      <DButton color="secondary">
+        <MdCamera style={{ fontSize: '2rem' }} />
+      </DButton>
+      <DButton color="primary">
+        <MdEmojiEvents style={{ fontSize: '2rem' }} />
+      </DButton>
     </DBox>
   </CBox>
 );
