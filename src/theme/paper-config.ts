@@ -20,8 +20,6 @@ const PaperConfig = {
         position: 'relative',
         display: 'flex',
         boxSizing: 'border-box',
-        margin: 0,
-        padding: 0,
       },
     },
   },

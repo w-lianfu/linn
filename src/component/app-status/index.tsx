@@ -9,7 +9,7 @@ interface IState {}
 
 const DBox = styled(Box)({
   height: '100%',
-  backgroundColor: Color.primary(1),
+  backgroundColor: Color.oliver(1),
 });
 
 const AppStatus = (props: IProps, state: IState) => <DBox />;

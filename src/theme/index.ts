@@ -5,6 +5,7 @@ import PaletteConfig from './palette-config';
 import TypographyConfig from './typography-config';
 import PaperConfig from './paper-config';
 import ButtonConfig from './button-config';
+import IconButtonConfig from './icon-button-config';
 
 const Theme = createTheme({
   palette: PaletteConfig,
@@ -13,6 +14,7 @@ const Theme = createTheme({
   components: {
     MuiPaper: PaperConfig,
     MuiButton: ButtonConfig,
+    MuiIconButton: IconButtonConfig,
     MuiSpeedDial: {
       styleOverrides: {
         root: {
